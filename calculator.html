@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="calculadora-background">
+    <div class="up-area">
+      <p>colocar algo aqui</p>
+    </div>
+    <div class="screen">
+      <h1>0</h1>
+    </div>
+    <div class="num-area">
+      <div class="line-one">
+        <button class="AC" data-action="clear">AC</button>
+        <button class="op">%</button>
+        <button class="op" data-action="divide">/</button>
+      </div>
+      <div class="line-two">
+        <button class="num">7</button>
+        <button class="num">8</button>
+        <button class="num">9</button>
+        <button class="op" data-action="multiply">x</button>
+      </div>
+      <div class="line-three">
+        <button class="num">4</button>
+        <button class="num">5</button>
+        <button class="num">6</button>
+        <button class="op" data-action="subtract">-</button>
+      </div>
+      <div class="line-four">
+        <button class="num">1</button>
+        <button class="num">2</button>
+        <button class="num">3</button>
+        <button class="op" data-action="add">+</button>
+      </div>
+      <div class="line-five">
+        <button class="btn-zero">0</button>
+        <button class="num" data-action="decimal">,</button>
+        <button class="op" data-action="calculate">=</button>
+      </div>
+      <div class="voltar-btn">
+        <a href="../home/home.htm"><button class="voltar-btn"></button></a>
+      </div>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+
+</html>
