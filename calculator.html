@@ -12,12 +12,7 @@
 
 <body>
   <div class="calculadora-background">
-    <div class="up-area">
-      <p>colocar algo aqui</p>
-    </div>
-    <div class="screen">
-      <h1>0</h1>
-    </div>
+    <div data-current-operand class="screen"></div>
     <div class="num-area">
       <div class="line-one">
         <button class="AC" data-action="clear">AC</button>
@@ -25,26 +20,26 @@
         <button class="op" data-action="divide">/</button>
       </div>
       <div class="line-two">
-        <button class="num">7</button>
-        <button class="num">8</button>
-        <button class="num">9</button>
+        <button data-num class="num">7</button>
+        <button data-num class="num">8</button>
+        <button data-num class="num">9</button>
         <button class="op" data-action="multiply">x</button>
       </div>
       <div class="line-three">
-        <button class="num">4</button>
-        <button class="num">5</button>
-        <button class="num">6</button>
+        <button data-num class="num">4</button>
+        <button data-num class="num">5</button>
+        <button data-num class="num">6</button>
         <button class="op" data-action="subtract">-</button>
       </div>
       <div class="line-four">
-        <button class="num">1</button>
-        <button class="num">2</button>
-        <button class="num">3</button>
+        <button data-num class="num">1</button>
+        <button data-num class="num">2</button>
+        <button data-num class="num">3</button>
         <button class="op" data-action="add">+</button>
       </div>
       <div class="line-five">
         <button class="btn-zero">0</button>
-        <button class="num" data-action="decimal">,</button>
+        <button data-num class="num" data-action="decimal">,</button>
         <button class="op" data-action="calculate">=</button>
       </div>
       <div class="voltar-btn">

@@ -27,21 +27,14 @@ body {
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
-.up-area {
-  color: white;
-  text-align: center;
-}
-
 .screen {
-  width: 300px;
-  height: 100px;
-}
-
-.screen h1 {
+  font-family: 'Murecho', sans-serif;
+  margin-top: 60px;
   font-size: 70px;
   text-align: right;
   color: white;
-  padding: 8% 10%;
+  width: 300px;
+  height: 100px;
 }
 
 .num-area {

@@ -1,9 +1,52 @@
+//display
+const display = document.querySelector('.screen')
+
+class Calculator {
+  constructor(display) {
+    this.display = display
+    this.clear()
+  }
+
+  clear() {
+    this.currentOperand = ''
+    this.operation = undefined
+  }
+
+  delete() {
+
+  }
+
+  appendNumber(number) {
+    this.currentOperand = number
+  }
+
+  chasseOperation(operation) {
+
+  }
+
+  computer() {
+
+  }
+
+  getDisplayNumber() {
+
+  }
+
+  updateDisplay() {
+    this.display.innerText = this.currentOperand
+  }
+}
+
+const calculator = new Calculator(display)
+
 //num functions
 const buttonsNum = document.querySelectorAll('.num')
 
 buttonsNum.forEach(button => {
   button.addEventListener('click', () => {
     button.classList.add('clicked')
+    calculator.appendNumber(button.innerText)
+    calculator.updateDisplay()
     setTimeout(() => {
       button.classList.remove('clicked')
     }, 300)
