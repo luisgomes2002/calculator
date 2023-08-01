@@ -17,7 +17,8 @@ class Calculator {
   }
 
   appendNumber(number) {
-    this.currentOperand = number
+    if (number === ',' && this.currentOperand.includes(',')) return
+    this.currentOperand = this.currentOperand.toString() + number.toString()
   }
 
   chasseOperation(operation) {
@@ -59,6 +60,8 @@ const buttonZero = document.querySelectorAll('.btn-zero')
 buttonZero.forEach(button => {
   button.addEventListener('click', () => {
     button.classList.add('clicked')
+    calculator.appendNumber(button.innerText)
+    calculator.updateDisplay()
     setTimeout(() => {
       button.classList.remove('clicked')
     }, 300)
@@ -71,6 +74,8 @@ const buttonAc = document.querySelectorAll('.ac')
 buttonAc.forEach(button => {
   button.addEventListener('click', () => {
     button.classList.add('clicked')
+    calculator.clear()
+    calculator.updateDisplay()
     setTimeout(() => {
       button.classList.remove('clicked')
     }, 300)
